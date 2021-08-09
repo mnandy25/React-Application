@@ -1,0 +1,98 @@
+
+.header {
+ color: white;
+ background-color: black;
+ }
+ .contact{
+ 
+  text-align: right;
+ }
+.home{
+   display: flex;
+   justify-content:center;
+ }
+ .homeimage{
+   width: 50%;
+   height: 40%;
+   display:flex;
+   }
+ul {
+  display:flex;
+  color: white;
+  justify-content: space-evenly;
+  list-style-type: none;
+  
+  
+}
+li{
+  color: rgb(243, 26, 26);
+  font-size: 250%;
+  font-style:italic;
+  font-family: cursive;
+  }
+.productimage{
+  width:20%;
+  height: 30%;
+}
+.view{
+  display: flex;
+  justify-content: center;
+ 
+}
+.title{
+  color: rgb(168, 23, 13);
+  text-align: center;
+  font-size: 250%;
+  font-style: bold;
+  font-family:fantasy;
+}
+.descrip{
+  font-size: 150%;
+  text-align: center;
+}
+.sliderimg{
+  width: 100%;
+  height: 500px;
+  object-fit: cover
+}
+.image{
+  width: 700px;
+  height: 600px;
+  border-radius: 10px;
+}
+.slider{
+  position: relative;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color:white;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
